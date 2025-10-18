@@ -5,10 +5,9 @@ namespace Tyuiu.GnidenkoPA.Sprint1.Task4.V24.Lib
     {
         public double Calculate(double x, double y)
         {
-            double numerator = Math.Log(x * y);
-            double denominator = x + Math.Sqrt(2 * y * y);
+            double numerator = y * Math.Log(x);  
+            double denominator = x + Math.Sqrt(2 * Math.Pow(y, 2));
             double result = numerator / denominator;
-
             return Math.Round(result, 3);
         }
     }
